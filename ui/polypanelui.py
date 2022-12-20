@@ -6,11 +6,12 @@ from mathutils import Vector
 
 
 
-class Larionov_polyhedra(Panel):
-    bl_label="POLYHEDRA"
-    bl_space_type="VIEW_3D"
-    bl_region_type='TOOLS'
-    bl_category = 'POLYHEDRA'
+class UI_PT_polyhedra(Panel):
+    """Generate Archimedean Polyhedrons"""
+    bl_label = "Polyhedra"
+    bl_idname = "UI_PT_polyhedra"
+    bl_space_type = 'VIEW_3D'
+    bl_region_type = 'TOOLS'
     
     #-----------------------
     # Draw UI
@@ -46,7 +47,7 @@ class Larionov_polyhedra(Panel):
         row = box.row()
         ###########
         box = layout.box()
-        box.label("Kepler–Poinsot polyhedron", icon='GROUP')
+        box.label("Kepler-Poinsot polyhedron", icon='GROUP')
         row = box.row()
         row.operator("mesh.add_great_dodecahedron")
         row.operator("mesh.add_great_stellated_dodecahedron")
