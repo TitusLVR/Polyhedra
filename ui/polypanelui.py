@@ -7,11 +7,12 @@ from mathutils import Vector
 
 
 class UI_PT_polyhedra(Panel):
-    """Generate Archimedean Polyhedrons"""
-    bl_label = "Polyhedra"
+    """Generate Archimedean Polyhedrons"""    
     bl_idname = "UI_PT_polyhedra"
+    bl_label = "Polyhedra"
     bl_space_type = 'VIEW_3D'
-    bl_region_type = 'TOOLS'
+    bl_region_type = 'UI'    
+    bl_category = "PolyHedra"
     
     #-----------------------
     # Draw UI
